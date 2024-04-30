@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Jane Waithira S2110907 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:orientation="horizontal"
+    tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/anek_latin"
+            android:hint="@string/day"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/humidityImage"
+            android:src="@drawable/baseline_water_drop_24"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="17dp"
+            android:contentDescription="TODO">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/humidityText"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:textSize="17sp"
+            android:fontFamily="@font/anek_latin"
+            android:hint="20"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/weatherIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="17dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/minTemperature"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/anek_latin"
+            android:hint="18"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/maxTemperature"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/anek_latin"
+            android:layout_marginTop="20dp"
+            android:hint="18"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17sp">
+        </TextView>
+
+    </LinearLayout>

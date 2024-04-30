@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Jane Waithira S2110907 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:ignore="MissingDefaultResource">
+
+
+    <!-- Location Name -->
+    <TextView
+        android:id="@+id/locationNameMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_margin="16dp"/>
+
+    <!-- Temperature -->
+    <TextView
+        android:id="@+id/temperatureMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_below="@id/locationNameMap"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Weather Icon -->
+    <ImageView
+        android:id="@+id/mapWeatherIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperatureMap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Minimum and Maximum Temperature -->
+    <TextView
+        android:id="@+id/minimumTemperatureMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/mapWeatherIcon"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/maximumTemperatureMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@id/mapWeatherIcon"
+        android:layout_marginTop="8dp" />
+
+    <!-- Two-Day Weather Forecast -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/threeDayWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners"
+        android:layout_below="@id/minimumTemperatureMap"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/threeDayWeather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:text="Close"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <style name="AppSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Customize text color -->
+        <item name="android:textColorHint">#FFFFFF</item> <!-- Query hint text color -->
+        <item name="android:colorControlNormal">#FFFFFF</item> <!-- Search icon color -->
+        <item name="android:colorControlActivated">#FFFFFF</item> <!-- Underline color -->
+        <item name="android:colorControlHighlight">#FFFFFF</item> <!-- Cursor color -->
+    </style>
+</resources>
